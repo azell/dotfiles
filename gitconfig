@@ -1,0 +1,13 @@
+[core]
+	pager = delta
+[delta]
+	plus-color = "#012800"
+	minus-color = "#340001"
+	theme = 'Monokai Extended'
+[interactive]
+	diffFilter = delta --color-only
+[user]
+	name = Adam Zell
+	email = zellster@gmail.com
+[pull]
+	rebase = false

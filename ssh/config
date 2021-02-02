@@ -1,0 +1,31 @@
+# eval "$(ssh-agent -s)"
+# ssh-add -K ~/.ssh/id_rsa ~/.ssh/journeys
+# ssh-add -l
+#
+# git config user.name "home_user"
+# git config user.email "your_name@home_email.com"
+
+Host github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+
+Host work.github.com
+  HostName github.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/journeys
+
+Host gitlab.com
+  HostName gitlab.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/id_rsa
+
+Host work.gitlab.com
+  HostName gitlab.com
+  PreferredAuthentications publickey
+  IdentityFile ~/.ssh/journeys
+
+# Host *
+#   AddKeysToAgent yes
+#   UseKeychain yes
+#   IdentityFile ~/.ssh/id_rsa
