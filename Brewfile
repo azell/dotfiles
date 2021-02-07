@@ -1,0 +1,8 @@
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
+brew "bash"
+brew "bat"
+brew "lsd"
+brew "ripgrep"
+brew "starship"
