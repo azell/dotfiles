@@ -22,7 +22,7 @@ sshagent() {
         rm -f "${SSH_AUTH_SOCK}"
         eval "$(ssh-agent -s -a "${SSH_AUTH_SOCK}")"
         echo "${SSH_AGENT_PID}" > "${pid_file}"
-        APPLE_SSH_ADD_BEHAVIOR=1 ssh-add -A
+        ssh-add --apple-load-keychain
     fi
 }
 
