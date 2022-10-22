@@ -18,7 +18,7 @@ sshagent() {
     export SSH_AGENT_PID
     export SSH_AUTH_SOCK="${config_dir}/ssh-agent.sock"
 
-    if ! kill -0 "${SSH_AGENT_PID}" &> /dev/null; then
+    if ! ps -p "${SSH_AGENT_PID}" 2> /dev/null | grep -q ssh-agent; then
         rm -f "${SSH_AUTH_SOCK}"
         eval "$(ssh-agent -s -a "${SSH_AUTH_SOCK}")"
         echo "${SSH_AGENT_PID}" > "${pid_file}"
