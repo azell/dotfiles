@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "Default Dark+",
+    "go.lintFlags": [
+        "--fast"
+    ],
+    "go.lintTool": "golangci-lint",
+    "gopls": {
+        "formatting.gofumpt": true    
+    },
+    "go.toolsManagement.autoUpdate": true
+}
