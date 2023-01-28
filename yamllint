@@ -1,0 +1,11 @@
+---
+extends: default
+
+locale: en_US.UTF-8
+
+rules:
+  document-end: enable
+  key-ordering: enable
+  quoted-strings:
+    required: only-when-needed
+...

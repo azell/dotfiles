@@ -1,7 +1,7 @@
-golang.go-0.35.2
+extensions.json
+golang.go-0.37.1
 humao.rest-client-0.25.1
-ms-azuretools.vscode-dapr-0.6.1
-ms-azuretools.vscode-docker-1.22.2
-ms-vscode-remote.remote-containers-0.262.3
+ms-azuretools.vscode-docker-1.23.3
+ms-vscode-remote.remote-containers-0.266.1
 ms-vscode.makefile-tools-0.6.0
 zxh404.vscode-proto3-0.5.5
