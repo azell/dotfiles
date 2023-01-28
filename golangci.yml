@@ -1,9 +1,13 @@
-run:
-  tests: true
+---
+linters:
+  fast: false
+
 linters-settings:
   govet:
     check-shadowing: true
     enable:
       - fieldalignment
-linters:
-  fast: false
+
+run:
+  tests: true
+...
