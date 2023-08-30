@@ -5,7 +5,10 @@
     ],
     "go.lintTool": "golangci-lint",
     "gopls": {
-        "formatting.gofumpt": true    
+        "formatting.gofumpt": true
     },
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "editor.minimap.enabled": false,
+    "go.alternateTools": {},
+    "editor.formatOnSave": true
 }

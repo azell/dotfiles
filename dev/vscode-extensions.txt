@@ -1,7 +1,9 @@
 extensions.json
-golang.go-0.37.1
+golang.go-0.39.1
 humao.rest-client-0.25.1
-ms-azuretools.vscode-docker-1.23.3
-ms-vscode-remote.remote-containers-0.266.1
-ms-vscode.makefile-tools-0.6.0
+ms-azuretools.vscode-docker-1.26.0
+ms-vscode-remote.remote-containers-0.304.0
+rust-lang.rust-analyzer-0.3.1641-darwin-arm64
+task.vscode-task-0.2.0
+vadimcn.vscode-lldb-1.9.2
 zxh404.vscode-proto3-0.5.5
