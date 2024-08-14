@@ -1,12 +1,15 @@
 export BAT_THEME=Coldark-Dark
 export EDITOR=/usr/bin/vim
-export GOPATH="${HOME}/go"
+export GOROOT=/usr/local/go
 export HISTCONTROL=ignoreboth
+export NVM_DIR="${HOME}/.nvm"
 export VSCODEPATH="/Applications/Visual Studio Code.app/Contents/Resources/app"
 
-[[ -d "${GOPATH}" ]] && export PATH="${GOPATH}/bin:${PATH}"
+[[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
+[[ -d "${GOROOT}" ]] && export PATH="${GOROOT}/bin:${PATH}"
 [[ -d "${VSCODEPATH}" ]] && export PATH="${VSCODEPATH}/bin:${PATH}"
 
-[[ -x /opt/homebrew/bin/brew ]] && eval "$(/opt/homebrew/bin/brew shellenv)"
-[[ -r "${HOME}/.bashrc" ]] && source "${HOME}/.bashrc"
-[[ -r "${HOME}/.cargo/env" ]] && source "${HOME}/.cargo/env"
+[[ -s "${HOME}/.bashrc" ]] && \. "${HOME}/.bashrc"
+[[ -s "${HOME}/.cargo/env" ]] && \. "${HOME}/.cargo/env"
+[[ -s "${NVM_DIR}/nvm.sh" ]] && \. "${NVM_DIR}/nvm.sh"  # This loads nvm
+[[ -s "${NVM_DIR}/bash_completion" ]] && \. "${NVM_DIR}/bash_completion"  # This loads nvm bash_completion
