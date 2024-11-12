@@ -21,5 +21,7 @@
 	# dark = true
 	# light = true
 
+	line-numbers = true
+
 [merge]
 	conflictstyle = zdiff3
